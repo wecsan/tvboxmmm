@@ -9,9 +9,10 @@
     <!--    默认window窗口(activity)背景颜色-->
     <color name="windowBackground">#fff</color>
 
-    <color name="bg_gray">#f7f7f7</color>
-    <color name="bg_gray_deep">#EFEFEF</color>
-    <color name="gray_darker">#7f7b79</color>
+    <color name="bg_gray">#f0f0f0</color>
+    <color name="bg_gray_deep">#e0e0e0</color>
+    <color name="text_color">#181818</color>
+    <color name="gray_darker">#303030</color>
     <!--    深灰点击透明度-->
     <color name="gray_darker_press_alpha">#3C808080</color>
 

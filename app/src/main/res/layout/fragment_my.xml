@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/bg_gray_deep"
     android:orientation="vertical">
 
     <LinearLayout
@@ -12,7 +11,6 @@
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/dp_40"
         android:paddingBottom="@dimen/dp_20"
-        android:background="@color/bg_gray"
         android:elevation="@dimen/dp_2"
         android:paddingHorizontal="20dp">
 
@@ -21,7 +19,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginLeft="20dp"
-            android:layout_marginBottom="4dp"
             android:text="@string/app_name"
             android:textColor="@color/black"
             android:textSize="22sp" />
@@ -29,9 +26,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="@android:color/transparent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_20"
+        android:background="@color/bg_gray_deep"
         android:scrollbars="none"
         >
         <LinearLayout
@@ -65,7 +62,7 @@
                     android:gravity="center"
                     android:text="订阅管理"
                     android:textAlignment="gravity"
-                    android:textColor="@color/text_gray"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
                 <Space
@@ -79,7 +76,7 @@
                     android:layout_gravity="center"
                     android:alpha="0.75"
                     android:src="@drawable/icon_pre"
-                    app:tint="@color/text_gray" />
+                    app:tint="@color/text_color" />
 
             </LinearLayout>
 
@@ -89,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_5"
                 android:background="@drawable/button_red_mask"
                 android:paddingVertical="16dp"
                 android:paddingHorizontal="24dp">
@@ -110,7 +107,7 @@
                     android:gravity="center"
                     android:text="观看历史"
                     android:textAlignment="gravity"
-                    android:textColor="@color/text_gray"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
                 <Space
@@ -124,7 +121,7 @@
                     android:layout_gravity="center"
                     android:alpha="0.75"
                     android:src="@drawable/icon_pre"
-                    app:tint="@color/text_gray" />
+                    app:tint="@color/text_color" />
 
             </LinearLayout>
 
@@ -133,7 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_5"
                 android:background="@drawable/button_red_mask"
                 android:paddingVertical="16dp"
                 android:paddingHorizontal="24dp">
@@ -154,7 +151,7 @@
                     android:gravity="center"
                     android:text="收藏"
                     android:textAlignment="gravity"
-                    android:textColor="@color/text_gray"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
                 <Space
@@ -168,7 +165,7 @@
                     android:layout_gravity="center"
                     android:alpha="0.75"
                     android:src="@drawable/icon_pre"
-                    app:tint="@color/text_gray" />
+                    app:tint="@color/text_color" />
 
             </LinearLayout>
 
@@ -177,7 +174,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_5"
                 android:background="@drawable/button_red_mask"
                 android:paddingVertical="16dp"
                 android:paddingHorizontal="24dp">
@@ -198,7 +195,7 @@
                     android:gravity="center"
                     android:text="直播"
                     android:textAlignment="gravity"
-                    android:textColor="@color/text_gray"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
                 <Space
@@ -212,7 +209,7 @@
                     android:layout_gravity="center"
                     android:alpha="0.75"
                     android:src="@drawable/icon_pre"
-                    app:tint="@color/text_gray" />
+                    app:tint="@color/text_color" />
 
             </LinearLayout>
 
@@ -221,7 +218,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_5"
                 android:background="@drawable/button_red_mask"
                 android:paddingVertical="16dp"
                 android:paddingHorizontal="24dp">
@@ -242,7 +239,7 @@
                     android:gravity="center"
                     android:text="本地视频"
                     android:textAlignment="gravity"
-                    android:textColor="@color/text_gray"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
                 <Space
@@ -256,7 +253,7 @@
                     android:layout_gravity="center"
                     android:alpha="0.75"
                     android:src="@drawable/icon_pre"
-                    app:tint="@color/text_gray" />
+                    app:tint="@color/text_color" />
 
             </LinearLayout>
 
@@ -265,7 +262,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_5"
                 android:background="@drawable/button_red_mask"
                 android:paddingVertical="16dp"
                 android:paddingHorizontal="24dp"
@@ -287,7 +284,7 @@
                     android:gravity="center"
                     android:text="播放链接"
                     android:textAlignment="gravity"
-                    android:textColor="@color/text_gray"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
                 <Space
@@ -301,7 +298,7 @@
                     android:layout_gravity="center"
                     android:alpha="0.75"
                     android:src="@drawable/icon_pre"
-                    app:tint="@color/text_gray" />
+                    app:tint="@color/text_color" />
 
             </LinearLayout>
 
@@ -310,7 +307,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_5"
                 android:background="@drawable/button_red_mask"
                 android:paddingVertical="16dp"
                 android:paddingHorizontal="24dp">
@@ -331,7 +328,7 @@
                     android:gravity="center"
                     android:text="关于"
                     android:textAlignment="gravity"
-                    android:textColor="@color/text_gray"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
                 <Space
@@ -345,7 +342,7 @@
                     android:layout_gravity="center"
                     android:alpha="0.75"
                     android:src="@drawable/icon_pre"
-                    app:tint="@color/text_gray" />
+                    app:tint="@color/text_color" />
 
             </LinearLayout>
 
@@ -354,7 +351,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_5"
                 android:background="@drawable/button_red_mask"
                 android:paddingVertical="16dp"
                 android:paddingHorizontal="24dp">
@@ -375,7 +372,7 @@
                     android:gravity="center"
                     android:text="设置"
                     android:textAlignment="gravity"
-                    android:textColor="@color/text_gray"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
                 <Space
@@ -389,7 +386,7 @@
                     android:layout_gravity="center"
                     android:alpha="0.75"
                     android:src="@drawable/icon_pre"
-                    app:tint="@color/text_gray" />
+                    app:tint="@color/text_color" />
 
             </LinearLayout>
 
@@ -397,21 +394,17 @@
 
     </ScrollView>
 
-    <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            />
 
     <TextView
-        android:id="@+id/tv_version"
-        android:textSize="11sp"
-        tools:text="v0.01"
-        android:paddingBottom="6dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/gray_darker"
-        />
+            android:id="@+id/tv_version"
+            android:textSize="11sp"
+            tools:text="v0.01"
+            android:paddingBottom="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/gray_darker"
+    />
 </LinearLayout>
 

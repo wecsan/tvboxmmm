@@ -32,7 +32,7 @@ public class LiveSettingItemAdapter extends BaseQuickAdapter<LiveSettingItem, Ba
         if (item.isItemSelected() && itemIndex != focusedItemIndex) {
             tvItemName.setTextColor(mContext.getResources().getColor(R.color.color_1890FF));
         } else {
-            tvItemName.setTextColor(ColorUtils.getColor(R.color.text_gray));
+            tvItemName.setTextColor(ColorUtils.getColor(R.color.text_color));
         }
     }
 

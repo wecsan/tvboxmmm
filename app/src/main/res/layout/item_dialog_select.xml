@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="@drawable/bg_r_25_stroke_primary"
     android:clickable="true"
     android:focusable="true"
     android:gravity="center"
@@ -16,6 +15,6 @@
     android:ellipsize="marquee"
   android:marqueeRepeatLimit="marquee_forever"
     android:text="@{name}"
-    android:textColor="@color/colorPrimary"
+    android:textColor="@color/text_color"
     tools:text="小破站"
     android:textSize="16sp"/>

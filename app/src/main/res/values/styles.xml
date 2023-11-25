@@ -150,7 +150,7 @@
         <item name="android:background">@android:color/transparent</item>
     </style>
     <style name="FileChooserTextNameStyle1" parent="FileChooserTextNameStyle">
-        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textColor">@color/text_color</item>
     </style>
     <style name="FileChooserTextSizeStyle1" parent="FileChooserTextSizeStyle">
         <item name="android:textColor">@color/colorPrimary</item>
@@ -163,7 +163,7 @@
     <!-- 选择器文件路径样式   -->
     <style name="FileChooserPathViewStyle1" parent="FileChooserPathViewStyle">
         <item name="android:background">@android:color/transparent</item>
-        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textColor">@color/text_color</item>
     </style>
 
 

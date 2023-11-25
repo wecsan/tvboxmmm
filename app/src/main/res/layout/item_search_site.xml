@@ -12,6 +12,7 @@
           android:focusable="true"
           android:focusableInTouchMode="true"
           android:textSize="@dimen/ts_16"
+          android:textColor="@color/text_color"
           android:gravity="center"
           android:singleLine="true"
           tools:text="七七资源网"

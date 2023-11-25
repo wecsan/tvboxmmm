@@ -48,7 +48,7 @@
                         android:layout_marginHorizontal="10dp"
                         android:text="16"
                         android:textStyle="bold"
-                        android:textColor="@color/text_gray" />
+                        android:textColor="@color/text_color" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/subtitleSizePlus"
@@ -76,7 +76,7 @@
                         android:layout_height="wrap_content"
                         android:focusable="true"
                         android:text="样式一"
-                        android:shadowColor="@color/text_gray"
+                        android:shadowColor="@color/text_color"
                         android:shadowRadius="2"
                         android:shadowDx="1"
                         android:shadowDy="1"/>
@@ -152,7 +152,7 @@
                         android:layout_marginHorizontal="10dp"
                         android:text="0"
                         android:textStyle="bold"
-                        android:textColor="@color/text_gray"/>
+                        android:textColor="@color/text_color"/>
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/subtitleTimePlus"

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.blankj.utilcode.util.ColorUtils;
 import com.github.tvbox.osc.R;
 
+import com.github.tvbox.osc.util.LOG;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -86,9 +88,9 @@ public class SelectDialogAdapter<T> extends ListAdapter<T, SelectDialogAdapter.S
         TextView view = holder.itemView.findViewById(R.id.tvName);
         if (position == select) {
             // view.setTextColor(Color.WHITE);
-            view.setBackground(view.getContext().getDrawable(R.drawable.button_primary_r25));
+            view.setBackground(view.getContext().getDrawable(R.drawable.button_select_selected));
         }else {
-            view.setBackground(view.getContext().getDrawable(R.drawable.bg_r_25_stroke_primary));
+            view.setBackground(view.getContext().getDrawable(R.drawable.button_select_normal));
             // view.setTextColor(ColorUtils.getColor(R.color.colorPrimary));
         }
         view.setText(name);
@@ -100,6 +102,7 @@ public class SelectDialogAdapter<T> extends ListAdapter<T, SelectDialogAdapter.S
                 notifyItemChanged(select);
                 select = position;
                 notifyItemChanged(select);
+                v.requestFocus();
                 dialogInterface.click(value, position);
             }
         });
