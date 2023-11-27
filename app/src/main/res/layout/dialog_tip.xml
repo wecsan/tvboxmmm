@@ -49,7 +49,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/leftBtn"
-                style="@style/mbOutline"
+                style="@style/mbNormal"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="33dp"
@@ -60,7 +60,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/rightBtn"
-                style="@style/mbOutline"
+                style="@style/mbNormal"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:insetTop="0dp"

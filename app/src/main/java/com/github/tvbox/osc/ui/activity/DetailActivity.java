@@ -28,6 +28,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.blankj.utilcode.util.ConvertUtils;
 import com.blankj.utilcode.util.LogUtils;
@@ -59,6 +60,7 @@ import com.github.tvbox.osc.ui.dialog.CastListDialog;
 import com.github.tvbox.osc.ui.dialog.QuickSearchDialog;
 import com.github.tvbox.osc.ui.dialog.VideoDetailDialog;
 import com.github.tvbox.osc.ui.fragment.PlayFragment;
+import com.github.tvbox.osc.ui.widget.GridSpacingItemDecoration;
 import com.github.tvbox.osc.ui.widget.LinearSpacingItemDecoration;
 import com.github.tvbox.osc.util.FastClickCheckUtil;
 import com.github.tvbox.osc.util.HawkConfig;
@@ -156,11 +158,11 @@ public class DetailActivity extends BaseVbActivity<ActivityDetailBinding> {
         mBinding.ivPrivateBrowsing.setOnClickListener(view -> ToastUtils.showShort("当前为无痕浏览"));
         mBinding.previewPlayerPlace.setVisibility(showPreview ? View.VISIBLE : View.GONE);
 
-        mBinding.mGridView.setHasFixedSize(true);
-        mBinding.mGridView.setLayoutManager(new V7LinearLayoutManager(this.mContext,RecyclerView.VERTICAL,false));
-        mBinding.mGridView.addItemDecoration(new LinearSpacingItemDecoration(20,false));
-
         seriesAdapter = new SeriesAdapter(true);
+
+        mBinding.mGridView.setHasFixedSize(true);
+        mBinding.mGridView.setLayoutManager(new GridLayoutManager(this.mContext, Utils.getSeriesSpanCount(seriesAdapter.getData())));
+        mBinding.mGridView.addItemDecoration(new GridSpacingItemDecoration(Utils.getSeriesSpanCount(seriesAdapter.getData()), 20, true));
         mBinding.mGridView.setAdapter(seriesAdapter);
         mBinding.mGridViewFlag.setHasFixedSize(true);
         mBinding.mGridViewFlag.setLayoutManager(new V7LinearLayoutManager(this.mContext, 0, false));
