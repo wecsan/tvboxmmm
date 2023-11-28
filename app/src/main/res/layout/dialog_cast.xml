@@ -41,8 +41,10 @@
             android:layout_height="33dp"
             android:layout_marginRight="20dp"
             android:text="关 闭"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:textColor="@color/text_color"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            app:backgroundTint="@color/bg_gray_deep"
+        />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_confirm"
@@ -51,8 +53,9 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:layout_height="33dp"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:strokeColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/text_color"
+            app:backgroundTint="@color/bg_gray_deep"
             android:text="刷 新"/>
 
     </LinearLayout>

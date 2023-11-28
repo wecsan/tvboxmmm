@@ -62,11 +62,7 @@ import com.github.tvbox.osc.ui.dialog.VideoDetailDialog;
 import com.github.tvbox.osc.ui.fragment.PlayFragment;
 import com.github.tvbox.osc.ui.widget.GridSpacingItemDecoration;
 import com.github.tvbox.osc.ui.widget.LinearSpacingItemDecoration;
-import com.github.tvbox.osc.util.FastClickCheckUtil;
-import com.github.tvbox.osc.util.HawkConfig;
-import com.github.tvbox.osc.util.SearchHelper;
-import com.github.tvbox.osc.util.SubtitleHelper;
-import com.github.tvbox.osc.util.Utils;
+import com.github.tvbox.osc.util.*;
 import com.github.tvbox.osc.viewmodel.SourceViewModel;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -161,8 +157,6 @@ public class DetailActivity extends BaseVbActivity<ActivityDetailBinding> {
         seriesAdapter = new SeriesAdapter(true);
 
         mBinding.mGridView.setHasFixedSize(true);
-        mBinding.mGridView.setLayoutManager(new GridLayoutManager(this.mContext, Utils.getSeriesSpanCount(seriesAdapter.getData())));
-        mBinding.mGridView.addItemDecoration(new GridSpacingItemDecoration(Utils.getSeriesSpanCount(seriesAdapter.getData()), 20, true));
         mBinding.mGridView.setAdapter(seriesAdapter);
         mBinding.mGridViewFlag.setHasFixedSize(true);
         mBinding.mGridViewFlag.setLayoutManager(new V7LinearLayoutManager(this.mContext, 0, false));
@@ -346,6 +340,7 @@ public class DetailActivity extends BaseVbActivity<ActivityDetailBinding> {
                     .hasNavigationBar(false)
                     .maxHeight(ScreenUtils.getScreenHeight() - (ScreenUtils.getScreenHeight() / 4))
                     .asCustom(new AllVodSeriesBottomDialog(this, seriesAdapter.getData(), (position, text) -> {
+                        LOG.i(seriesAdapter.getData().toString());
                         chooseSeries(position);
                     }));
             mAllSeriesBottomDialog.show();
@@ -443,6 +438,8 @@ public class DetailActivity extends BaseVbActivity<ActivityDetailBinding> {
             if(canSelect)vodInfo.seriesMap.get(vodInfo.playFlag).get(vodInfo.playIndex).selected = true;
         }
         seriesAdapter.setNewData(vodInfo.seriesMap.get(vodInfo.playFlag));
+        mBinding.mGridView.setLayoutManager(new GridLayoutManager(this.mContext, Utils.getSeriesSpanCount(seriesAdapter.getData())));
+        mBinding.mGridView.addItemDecoration(new GridSpacingItemDecoration(Utils.getSeriesSpanCount(seriesAdapter.getData()), 20, true));
 
     }
 

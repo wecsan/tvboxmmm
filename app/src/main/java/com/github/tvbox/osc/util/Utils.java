@@ -30,6 +30,7 @@ public class Utils {
     }
 
     public static int getSeriesSpanCount(List<VodInfo.VodSeries> list) {
+        LOG.i(list.toString());
         int spanCount = 4;
         int total = 0;
         for (VodInfo.VodSeries item : list) total += item.name.length();

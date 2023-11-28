@@ -6,6 +6,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import androidx.core.content.ContextCompat;
 import com.blankj.utilcode.util.ColorUtils;
 import com.github.tvbox.osc.R;
 import com.github.tvbox.osc.databinding.DialogPlayingControlBinding;
@@ -108,11 +109,9 @@ public class PlayingControlDialog extends BottomPopupView {
         for (int i = 0; i <mBinding.containerSpeed.getChildCount(); i++) {
             TextView tv= (TextView) mBinding.containerSpeed.getChildAt(i);
             if (String.valueOf(mPlayer.getSpeed()).equals(tv.getText().toString().replace("x",""))){
-                tv.setBackground(getResources().getDrawable(R.drawable.bg_r_common_solid_primary));
-                tv.setTextColor(ColorUtils.getColor(R.color.white));
+                tv.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.button_select_selected));
             }else {
-                tv.setBackground(getResources().getDrawable(R.drawable.bg_r_common_stroke_primary));
-                tv.setTextColor(ColorUtils.getColor(R.color.text_color));
+                tv.setBackground(getResources().getDrawable(R.drawable.button_select_normal));
             }
         }
     }
