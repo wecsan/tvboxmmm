@@ -5,11 +5,11 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId 'com.github.tvbox.osc.m'
+        applicationId 'org.eu.bunnyabc.mob'
         minSdkVersion 24
         targetSdkVersion 30
-        versionCode 23
-        versionName '1.0.3'
+        versionCode 1
+        versionName '0.0.0'
         multiDexEnabled true
         //设置room的Schema的位置
         javaCompileOptions {
