@@ -13,9 +13,9 @@
 		android:layout_height="240dp">
 
 		<xyz.doikki.videoplayer.player.VideoView
-			android:id="@+id/mVideoView"
-			android:layout_width="match_parent"
-			android:layout_height="300dp" />
+				android:id="@+id/mVideoView"
+				android:layout_width="match_parent"
+				android:layout_height="300dp"/>
 
 		<LinearLayout
 			android:id="@+id/tvRightSettingLayout"

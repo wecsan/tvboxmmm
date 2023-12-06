@@ -9,6 +9,7 @@
       <map>
         <entry key="..\:/Git/q215613905/TVBoxOS/app/src/main/res/layout/item_list.xml" value="0.14266304347826086" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_bottom_container.xml" value="0.3140625" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_channel_list.xml" value="0.384375" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_gradient_black_b2t.xml" value="0.29739583333333336" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_large_round_gray.xml" value="0.3151041666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_large_round_popup.xml" value="0.3151041666666667" />
@@ -44,7 +45,7 @@
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/activity_fast_search.xml" value="0.2947916666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/activity_history.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/activity_live.xml" value="0.2947916666666667" />
-        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/activity_live_play.xml" value="0.2947916666666667" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/activity_live_play.xml" value="0.3333333333333333" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/activity_main.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/activity_movie_folders.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/activity_play.xml" value="0.2947916666666667" />
@@ -80,6 +81,7 @@
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/dialog_tmdb_vod_info.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/dialog_video_detail.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/dialog_xwalk.xml" value="0.27708333333333335" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/dkplayer_layout_menu_view.xml" value="0.3333333333333333" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/fragment_grid.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/fragment_home.xml" value="0.2947916666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/fragment_model.xml" value="0.27708333333333335" />
@@ -96,9 +98,11 @@
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_list.xml" value="0.2947916666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_live.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_live_channel.xml" value="0.27708333333333335" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_live_channel_group.xml" value="0.3333333333333333" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_live_channel_group_new.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_live_channel_new.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_live_setting.xml" value="0.27708333333333335" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_live_setting_group.xml" value="0.16666666666666666" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_quick_search_lite.xml" value="0.2947916666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_search.xml" value="0.3333333333333333" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_search_site.xml" value="0.27708333333333335" />
@@ -113,6 +117,8 @@
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_subscription.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_title.xml" value="0.27708333333333335" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/item_view_load_more.xml" value="0.27708333333333335" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/loadsir_empty_layout.xml" value="0.10376532399299475" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/loadsir_loading_layout.xml" value="0.10376532399299475" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/player_live_control_view.xml" value="0.26358695652173914" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/layout/player_vod_control_view.xml" value="0.2947916666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/menu/main_bottom_navigation.xml" value="0.29583333333333334" />

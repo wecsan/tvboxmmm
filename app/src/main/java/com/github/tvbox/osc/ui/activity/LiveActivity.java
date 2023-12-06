@@ -546,7 +546,7 @@ public class LiveActivity extends BaseActivity {
             }
         });
         controller.setCanChangePosition(false);
-        controller.setEnableInNormal(false);
+        controller.setEnableInNormal(true);
         controller.setGestureEnabled(true);
         controller.setDoubleTapTogglePlayEnabled(false);
         mVideoView.setVideoController(controller);
