@@ -156,7 +156,7 @@ public class FastSearchActivity extends BaseVbActivity<ActivityFastSearchBinding
         }
     };
 
-
+    private boolean firstFocus = true;
     private void initView() {
 
         mBinding.etSearch.setOnEditorActionListener((v, actionId, event) -> {
@@ -205,12 +205,14 @@ public class FastSearchActivity extends BaseVbActivity<ActivityFastSearchBinding
                 child.setFocusable(true);
                 child.setOnFocusChangeListener(focusChangeListener);
                 TextView t = (TextView) child;
-                if (t.getText() == "全部显示") {
+                if (t.getText() == "全部显示" && firstFocus) {
                     t.requestFocus();
+                    firstFocus = false;
                 }
-//                if (child.isFocusable() && null == child.getOnFocusChangeListener()) {
-//                    child.setOnFocusChangeListener(focusChangeListener);
-//                }
+                // LOG.i((null == child.getOnFocusChangeListener()) + "   getOnFocusChangeListener");
+               // if (null == child.getOnFocusChangeListener()) {
+               //     child.setOnFocusChangeListener(focusChangeListener);
+               // }
             }
 
             @Override
@@ -591,6 +593,9 @@ public class FastSearchActivity extends BaseVbActivity<ActivityFastSearchBinding
     }
 
     private void search(String title) {
+        // 让焦点全部显示按钮获取
+        firstFocus = true;
+
         if (TextUtils.isEmpty(title)) {
             ToastUtils.showShort("请输入搜索内容");
             return;

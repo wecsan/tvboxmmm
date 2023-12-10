@@ -11,6 +11,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.os.Build;
@@ -75,6 +77,7 @@ import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.AbsCallback;
 import com.lzy.okgo.model.Response;
 import com.orhanobut.hawk.Hawk;
+import com.owen.tvrecyclerview.widget.V7GridLayoutManager;
 import com.owen.tvrecyclerview.widget.V7LinearLayoutManager;
 
 import org.greenrobot.eventbus.EventBus;
@@ -158,6 +161,10 @@ public class DetailActivity extends BaseVbActivity<ActivityDetailBinding> {
 
         mBinding.mGridView.setHasFixedSize(true);
         mBinding.mGridView.setAdapter(seriesAdapter);
+
+        // mBinding.mGridView.setLayoutManager(new GridLayoutManager(this.mContext, Utils.getSeriesSpanCount(seriesAdapter.getData())));
+        // mBinding.mGridView.addItemDecoration(new GridSpacingItemDecoration(Utils.getSeriesSpanCount(seriesAdapter.getData()), 20, true));
+
         mBinding.mGridViewFlag.setHasFixedSize(true);
         mBinding.mGridViewFlag.setLayoutManager(new V7LinearLayoutManager(this.mContext, 0, false));
         seriesFlagAdapter = new SeriesFlagAdapter();
@@ -436,11 +443,40 @@ public class DetailActivity extends BaseVbActivity<ActivityDetailBinding> {
                 }
             }
             if(canSelect)vodInfo.seriesMap.get(vodInfo.playFlag).get(vodInfo.playIndex).selected = true;
-        }
-        seriesAdapter.setNewData(vodInfo.seriesMap.get(vodInfo.playFlag));
-        mBinding.mGridView.setLayoutManager(new GridLayoutManager(this.mContext, Utils.getSeriesSpanCount(seriesAdapter.getData())));
-        mBinding.mGridView.addItemDecoration(new GridSpacingItemDecoration(Utils.getSeriesSpanCount(seriesAdapter.getData()), 20, true));
+/*
+        Paint pFont = new Paint();
+//        pFont.setTypeface(Typeface.DEFAULT );
+        Rect rect = new Rect();
 
+        List<VodInfo.VodSeries> list = vodInfo.seriesMap.get(vodInfo.playFlag);
+        assert list != null;
+        int listSize = list.size();
+
+        int w = 1;
+        for (VodInfo.VodSeries vodSeries : list) {
+            String name = vodSeries.name;
+            pFont.getTextBounds(name, 0, name.length(), rect);
+            if (w < rect.width()) {
+                w = rect.width();
+            }
+        }
+        w += 32;
+        // int screenWidth = getWindowManager().getDefaultDisplay().getWidth()/3;
+        int mGridViewWidth = mBinding.mGridView.getWidth();
+        int offset = mGridViewWidth/w;
+        if(offset <=2) offset =2;
+        if(offset > 6) offset =6;
+        this.mGridViewLayoutMgr.setSpanCount(offset);
+*/
+        }
+
+        seriesAdapter.setNewData(vodInfo.seriesMap.get(vodInfo.playFlag));
+
+        // 网格布局可能存在问题
+        int spanCount = Utils.getSeriesSpanCount(seriesAdapter.getData());
+        if (0 < mBinding.mGridView.getItemDecorationCount()) mBinding.mGridView.removeItemDecorationAt(0);
+        mBinding.mGridView.setLayoutManager(new V7GridLayoutManager(this.mContext, spanCount));
+        mBinding.mGridView.addItemDecoration(new GridSpacingItemDecoration(spanCount, 10, true));
     }
 
     private void initViewModel() {
