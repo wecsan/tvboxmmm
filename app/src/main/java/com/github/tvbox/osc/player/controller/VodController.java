@@ -77,8 +77,9 @@ public class VodController extends BaseController {
                     }
                     case 1002: { // 显示底部菜单
                         mBottomRoot.setVisibility(VISIBLE);
-                        mTopRoot1.setVisibility(VISIBLE);
-                        mTopRoot2.setVisibility(VISIBLE);
+                        // mTopRoot1.setVisibility(VISIBLE);
+                        // mTopRoot2.setVisibility(VISIBLE);
+                        mTopContainer.setVisibility(VISIBLE);
                         if (!isLock){// 未上锁,随底部显示
                             mLockView.setVisibility(VISIBLE);
                         }
@@ -87,8 +88,9 @@ public class VodController extends BaseController {
                     }
                     case 1003: { // 隐藏底部菜单
                         mBottomRoot.setVisibility(GONE);
-                        mTopRoot1.setVisibility(GONE);
-                        mTopRoot2.setVisibility(GONE);
+                        // mTopRoot1.setVisibility(GONE);
+                        // mTopRoot2.setVisibility(GONE);
+                        mTopContainer.setVisibility(GONE);
                         if (!isLock){// 未上锁,随底部隐藏
                             mLockView.setVisibility(GONE);
                         }
@@ -124,6 +126,7 @@ public class VodController extends BaseController {
     TextView mProgressText;
     ImageView mProgressIcon;
     LinearLayout mBottomRoot;
+    LinearLayout mTopContainer;
     LinearLayout mTopRoot1;
     View mTopRoot2;
     LinearLayout mParseRoot;
@@ -209,6 +212,7 @@ public class VodController extends BaseController {
         mProgressIcon = findViewById(R.id.tv_progress_icon);
         mProgressText = findViewById(R.id.tv_progress_text);
         mBottomRoot = findViewById(R.id.bottom_container);
+        mTopContainer = findViewById(R.id.top_container);
         mTopRoot1 = findViewById(R.id.tv_top_l_container);
         mTopRoot2 = findViewById(R.id.tv_top_r_container);
         mParseRoot = findViewById(R.id.parse_root);
@@ -745,11 +749,13 @@ public class VodController extends BaseController {
             mNextBtn.setVisibility(VISIBLE);
             mChooseSeries.setVisibility(VISIBLE);
             mTopRightDeviceInfo.setVisibility(VISIBLE);
+            findViewById(R.id.cast).setVisibility(VISIBLE);
         } else {
             mTopRightDeviceInfo.setVisibility(INVISIBLE);
             mPreBtn.setVisibility(GONE);
             mNextBtn.setVisibility(GONE);
             mChooseSeries.setVisibility(GONE);
+            findViewById(R.id.cast).setVisibility(GONE);
         }
     }
 

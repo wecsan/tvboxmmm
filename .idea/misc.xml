@@ -9,16 +9,21 @@
       <map>
         <entry key="..\:/Git/q215613905/TVBoxOS/app/src/main/res/layout/item_list.xml" value="0.14266304347826086" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_bottom_container.xml" value="0.3140625" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_bottom_dialog.xml" value="0.25854700854700857" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_channel_list.xml" value="0.384375" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_gradient_black_b2t.xml" value="0.29739583333333336" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_gradient_black_r2l.xml" value="0.244017094017094" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_large_round_gray.xml" value="0.3151041666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_large_round_popup.xml" value="0.3151041666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_ll_word_indicator.xml" value="0.29739583333333336" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_progress_bar_out.xml" value="0.244017094017094" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_progressbar.xml" value="0.3151041666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_r_25_stroke_primary.xml" value="0.29739583333333336" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_r_common_solid_primary.xml" value="0.244017094017094" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_r_common_stroke_primary.xml" value="0.29739583333333336" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_small_round_gray.xml" value="0.3151041666666667" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_top_container.xml" value="0.3151041666666667" />
+        <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bg_transparent.xml" value="0.244017094017094" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/bottom_navigation_item_selector.xml" value="0.29739583333333336" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/button_detail_quick_search.xml" value="0.29739583333333336" />
         <entry key="..\:/Github_Project/TVBoxOS-Mobile/app/src/main/res/drawable/button_focused.xml" value="0.29739583333333336" />
