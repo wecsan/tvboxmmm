@@ -1446,7 +1446,7 @@ public class PlayFragment extends BaseLazyFragment {
     }
 
     public String getFinalUrl(){
-        return mFinalUrl;
+        return TextUtils.isEmpty(mFinalUrl)?"":mFinalUrl;
     }
 
     boolean checkVideoFormat(String url) {

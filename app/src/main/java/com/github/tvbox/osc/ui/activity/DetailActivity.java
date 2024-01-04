@@ -1000,4 +1000,8 @@ public class DetailActivity extends BaseVbActivity<ActivityDetailBinding> {
             }
         }
     }
+
+    public String getCurrentVodUrl(){
+        return playFragment==null?"":playFragment.getFinalUrl();
+    }
 }

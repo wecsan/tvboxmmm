@@ -31,7 +31,7 @@ android {
                 outputFileName += '_' + new Date().format("yyyyMMdd")
             }
             outputFileName += '.apk'
-            outputFileName = 'Jade_SHJ_Mob.apk'
+            outputFileName = "Jade_SHJ_Mob_${releaseTime()}.apk"
         }
     }
 
@@ -95,6 +95,10 @@ android {
     packagingOptions {//引入dlna-cast时的文件冲突
         exclude 'META-INF/beans.xml'
     }
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmm", TimeZone.getTimeZone("GMT+08:00"))
 }
 
 dependencies {
