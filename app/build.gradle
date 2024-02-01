@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId 'mob.org.eu.bunnyabc'
         minSdkVersion 24
-        targetSdkVersion 30
+        targetSdkVersion 29
         versionCode 1
         versionName '0.0.0'
         multiDexEnabled true
