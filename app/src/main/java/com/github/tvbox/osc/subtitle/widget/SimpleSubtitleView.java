@@ -27,6 +27,8 @@ package com.github.tvbox.osc.subtitle.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import androidx.annotation.Nullable;
 
 import android.graphics.Canvas;
@@ -39,10 +41,12 @@ import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.github.tvbox.osc.base.App;
 import com.github.tvbox.osc.cache.CacheManager;
 import com.github.tvbox.osc.subtitle.DefaultSubtitleEngine;
 import com.github.tvbox.osc.subtitle.SubtitleEngine;
 import com.github.tvbox.osc.subtitle.model.Subtitle;
+import com.github.tvbox.osc.util.LOG;
 import com.github.tvbox.osc.util.MD5;
 
 import java.util.List;
@@ -218,6 +222,7 @@ public class SimpleSubtitleView extends TextView
     protected void onTextChanged(CharSequence text, int start, int lengthBefore, int lengthAfter) {
         if (backGroundText != null) {
             backGroundText.setText(text);
+            // LOG.i("simplesubtView size: " + backGroundText.getTextSize());
         }
         super.onTextChanged(text, start, lengthBefore, lengthAfter);
     }
@@ -239,11 +244,11 @@ public class SimpleSubtitleView extends TextView
     private void drawBackGroundText() {
         TextPaint tp = backGroundText.getPaint();
         //设置描边宽度
-        tp.setStrokeWidth(10);
+        tp.setStrokeWidth(1);
         //背景描边并填充全部
         tp.setStyle(Paint.Style.FILL_AND_STROKE);
         //设置描边颜色
-        backGroundText.setTextColor(Color.BLACK);
+        backGroundText.setTextColor(Color.MAGENTA);
         //将背景的文字对齐方式做同步
         backGroundText.setGravity(getGravity());
     }

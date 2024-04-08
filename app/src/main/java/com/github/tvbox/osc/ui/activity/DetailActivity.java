@@ -836,9 +836,11 @@ public class DetailActivity extends BaseVbActivity<ActivityDetailBinding> {
 
     void toggleSubtitleTextSize() {
         int subtitleTextSize  = SubtitleHelper.getTextSize(this);
+        LOG.i("detailactivity subtitleTextSize: " + subtitleTextSize);
         if (!fullWindows) {
-            subtitleTextSize *= 0.6;
+            subtitleTextSize *= 0.8;
         }
+        LOG.i("detailactivity subtitleTextSize: " + subtitleTextSize);
         EventBus.getDefault().post(new RefreshEvent(RefreshEvent.TYPE_SUBTITLE_SIZE_CHANGE, subtitleTextSize));
     }
 
