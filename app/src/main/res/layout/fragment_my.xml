@@ -82,6 +82,7 @@
 
 
             <LinearLayout
+               android:visibility="gone"
                 android:id="@+id/tvHistory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -126,6 +127,7 @@
             </LinearLayout>
 
             <LinearLayout
+               android:visibility="gone"
                 android:id="@+id/tvFavorite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -170,6 +172,7 @@
             </LinearLayout>
 
             <LinearLayout
+            
                 android:id="@+id/tvLive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -214,6 +217,7 @@
             </LinearLayout>
 
             <LinearLayout
+               android:visibility="gone"
                 android:id="@+id/tvLocal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -258,6 +262,7 @@
             </LinearLayout>
 
             <LinearLayout
+               android:visibility="gone"
                 android:id="@+id/addrPlay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -303,6 +308,7 @@
             </LinearLayout>
 
             <LinearLayout
+               android:visibility="gone"
                 android:id="@+id/llAbout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
