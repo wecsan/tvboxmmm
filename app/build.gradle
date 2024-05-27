@@ -8,8 +8,8 @@ android {
         applicationId 'mob.music.web.ting'
         minSdkVersion 24
         targetSdkVersion 29
-        versionCode 1
-        versionName '0.0.0'
+        versionCode 96
+        versionName '9.6.6'
         multiDexEnabled true
         //设置room的Schema的位置
         javaCompileOptions {
