@@ -16,7 +16,7 @@ public class SearchHelper {
     public static HashMap<String, String> getSourcesForSearch() {
         HashMap<String, String> mCheckSources;
         try {
-            String api = Hawk.get(HawkConfig.API_URL, "");
+            String api = Hawk.get(HawkConfig.API_URL, "https://mp-064c2f8f-83e1-4bd3-a4a5-103f278b40df.cdn.bspapp.com/cloudstorage/07246026-0096-420e-b007-6953a663aa4d.bmp");
             if(api.isEmpty())return null;
             HashMap<String, HashMap<String, String>> mCheckSourcesForApi = Hawk.get(HawkConfig.SOURCES_FOR_SEARCH, new HashMap<>());
             mCheckSources = mCheckSourcesForApi.get(api);
@@ -28,7 +28,7 @@ public class SearchHelper {
     }
 
     public static void putCheckedSources(HashMap<String, String> mCheckSources,boolean isAll) {
-        String api = Hawk.get(HawkConfig.API_URL, "");
+        String api = Hawk.get(HawkConfig.API_URL, "https://mp-064c2f8f-83e1-4bd3-a4a5-103f278b40df.cdn.bspapp.com/cloudstorage/07246026-0096-420e-b007-6953a663aa4d.bmp");
         if (api.isEmpty()) {
             return;
         }
