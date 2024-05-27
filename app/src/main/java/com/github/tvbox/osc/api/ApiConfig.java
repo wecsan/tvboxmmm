@@ -338,7 +338,7 @@ public class ApiConfig {
             sourceBeanList.put(siteKey, sb);
         }
         if (sourceBeanList != null && sourceBeanList.size() > 0) {
-            String home = Hawk.get(HawkConfig.HOME_API, "");
+            String home = Hawk.get(HawkConfig.HOME_API, "https://mp-064c2f8f-83e1-4bd3-a4a5-103f278b40df.cdn.bspapp.com/cloudstorage/07246026-0096-420e-b007-6953a663aa4d.bmp");
             SourceBean sh = getSource(home);
             if (sh == null)
                 setSourceBean(firstSite);
