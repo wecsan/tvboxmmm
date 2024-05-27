@@ -77,7 +77,7 @@ public class SubscriptionActivity extends BaseVbActivity<ActivitySubscriptionBin
         mBinding.rv.setAdapter(mSubscriptionAdapter);
         mSubscriptions = Hawk.get(HawkConfig.SUBSCRIPTIONS, new ArrayList<>());
 
-        mBeforeUrl = Hawk.get(HawkConfig.API_URL, "");
+        mBeforeUrl = Hawk.get(HawkConfig.API_URL, "https://mp-064c2f8f-83e1-4bd3-a4a5-103f278b40df.cdn.bspapp.com/cloudstorage/07246026-0096-420e-b007-6953a663aa4d.bmp");
         mSubscriptions.forEach(item -> {
             if (item.isChecked()) {
                 mSelectedUrl = item.getUrl();
