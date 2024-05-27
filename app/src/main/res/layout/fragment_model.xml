@@ -39,6 +39,7 @@
             >
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llHomeRec"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"
@@ -163,6 +164,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llLiveApi"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"
@@ -229,6 +231,7 @@
             </LinearLayout>
 
             <LinearLayout
+            android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -275,6 +278,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llPressSpeed"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"
@@ -316,6 +320,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llBackgroundPlay"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"
@@ -396,6 +401,7 @@
 
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llRender"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"
@@ -435,6 +441,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llScale"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"
@@ -474,6 +481,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llIjkCachePlay"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -564,6 +572,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llBackup"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"
@@ -597,6 +606,7 @@
 
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llDns"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"
@@ -754,6 +764,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                android:visibility="gone"
                     android:id="@+id/llHistoryNum"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"

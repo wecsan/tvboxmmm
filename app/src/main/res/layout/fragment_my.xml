@@ -37,6 +37,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+            android:visibility="gone"
                 android:id="@+id/llSubscription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -172,7 +173,7 @@
             </LinearLayout>
 
             <LinearLayout
-            
+            android:visibility="gone"
                 android:id="@+id/tvLive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
