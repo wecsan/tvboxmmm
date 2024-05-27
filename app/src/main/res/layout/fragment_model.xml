@@ -124,6 +124,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:visibility="gone">
                     android:id="@+id/llTheme"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60"
