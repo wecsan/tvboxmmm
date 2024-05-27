@@ -118,6 +118,7 @@
                         android:gravity="end|center_vertical"
                         android:orientation="horizontal">
                         <TextView
+                               android:visibility="gone"
                             android:id="@+id/tvCast"
                             android:layout_width="wrap_content"
                             android:layout_height="@dimen/dp_40"
@@ -135,6 +136,7 @@
                             android:background="@color/gray_darker"
                             android:layout_marginHorizontal="6dp"/>
                         <TextView
+                               android:visibility="gone"
                             android:id="@+id/tvCollect"
                             android:layout_width="wrap_content"
                             android:layout_height="@dimen/dp_40"
@@ -152,6 +154,7 @@
                             android:background="@color/gray_darker"
                             android:layout_marginHorizontal="6dp"/>
                         <TextView
+                               android:visibility="gone"
                             android:id="@+id/tvDownload"
                             android:layout_width="wrap_content"
                             android:layout_height="@dimen/dp_40"
@@ -231,7 +234,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="选集"
+                        android:text="列表"
                         android:textColor="@color/text_color"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
